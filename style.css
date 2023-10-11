@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    padding: 8px 8%;
+}
+.logo{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: logoani 1s ease forwards;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-link {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: x-large;
+}
+.social-link{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: large;
+}
+.nav-link li{
+    animation: Navliani forwards 1s ease;
+}
+.nav-link li a{
+    color: black;
+    margin: 10px;
+    transition: .4s ease;
+}
+.social-link a{
+    color: red;
+    margin: 10px;
+}
+.social-link a:hover{
+    color: aqua;
+}
+.nav-link li a:hover{
+    color: aqua;
+}
+.social-link li a{
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    transform: rotate(45deg);
+    transition: .4s ease;
+}
+.social-link li a:hover{
+    border-color: blue;
+}
+.social-link li a i{
+    transform: rotate(-45deg);
+    font-size: 22px;
+}
+.btn{
+    background-color: skyblue;
+    color: black;
+    border-radius: 10px;
+    height: 45px;
+    padding: 10px 10px;
+    font-size: larger;
+    font-weight: 800;
+    font-style: italic;
+    animation: Navliani 1s ease forwards;
+    animation-delay: .3s;
+    opacity: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+.Write{
+    font-size: 59px;
+    color: rgb(0, 54, 120);
+    font-family: 'Permanent Marker', cursive;
+    animation: H1ani 1s ease forwards;
+    animation-delay: .3s;
+    opacity: 0;
+}
+.header-container{
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 900px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-header{
+    margin-top: 100px;
+    padding: 15px;
+    line-height: 40px;
+    justify-content: center;
+    position: relative;
+    width: 70%;
+}
+.Write1{
+    font-family: 'Lobster', sans-serif;
+    font-size: 20px;
+    font-family: 'Kalam', cursive;
+    margin-top: 20px;
+    color: black;
+    font-weight: 800;
+    animation: Pani 1s ease forwards;
+    animation-delay: .3s;
+    opacity: 0;
+}
+.right-header{
+    height: 450px;
+    width: 450px;
+    position: relative;
+    top: 1rem;
+}
+.sq-box{
+    height: 100%;
+    width: 100%;
+    border: 35px solid rgb(11, 109, 229);
+    transform: rotate(-45deg);
+    right: -7%;
+    left: -190px;
+    box-shadow: -15px 15px 15px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    animation-delay: .3s;
+    animation: Zoomout 1s ease forwards;
+}
+.sq-box2{
+    position: absolute;
+    height: 700px;
+    width: 700px;
+    background-color: blue;
+    transform: rotate(45deg);
+    top: -80%;
+    right: -80%;
+    z-index: -1;
+    opacity: 0;
+    animation-delay: .6s;
+    animation: sqbox2ani 1s ease forwards;
+}
+header
+{
+    position: relative;
+    overflow: hidden;
+}
+.sq-box img{
+    position: absolute;
+    transform: rotate(45deg);
+    max-width: 680px;
+    top: 0;
+    left: -260px;
+    opacity: 0;
+    animation-delay: .6s;
+    animation: Carani 1s ease forwards;
+}
+
+@keyframes logoani {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(100px);
+        opacity: 1;
+    }
+  }
+
+  @keyframes Navliani {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }
+  @keyframes H1ani {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }
+  @keyframes Pani {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+  }
+  @keyframes Zoomout {
+    0%{
+        transform: scale(1.1) rotate(-45deg);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1) rotate(-45deg);
+        opacity: 1;
+    }
+  }
+  @keyframes Carani {
+    0%{
+        transform: translate(180px, -180px) scale(0) rotate(-45deg);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px, 0px) scale(1) rotate(45deg);
+        opacity: 1;
+    }
+  }
+  @keyframes sqbox2ani {
+    0%{
+        right: -40%;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+.About{
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+}
+.About-h1{
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    color: blue;
+    font-family: 'Permanent Marker', cursive;
+    margin-top: 30px;
+}
+.About-h3{
+    font-family: 'Kalam', cursive;
+    margin-top: 15px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.Services-h1{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    color: blue;
+    text-decoration: underline;
+}
+.Services{
+    margin: 25px 25%;
+}
+.Services-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    grid-auto-rows: 300px;
+}
+
+.card {
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    transition: 1.2s;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+    margin-top: 50px;
+}
+.card img{
+    width: 300px;
+    height: 200px;
+}
+
+.Carddescr{
+    color: rgb(4, 15, 15);
+    font-family: 'Permanent Marker', cursive;
+    padding: 10px;
+    font-size: larger;
+}
+.card:hover{
+    scale: 1.2;
+}
