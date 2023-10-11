@@ -301,3 +301,120 @@ html{
 .card:hover{
     scale: 1.2;
 }
+.Contact{
+    width: 600px;
+    height: 250px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    font-family: 'Permanent Marker', cursive;    
+    margin-top: 90px;
+    padding: 20px;
+    border: 5px solid blue;
+    border-radius: 20px;
+    justify-self: center;
+    margin-left: 35%;
+}
+.ContactUs{
+    text-align: center;
+    font-size: xx-large;
+    color: red;
+    text-decoration: underline;
+}
+.Queries{
+    text-align: center;
+    font-size: larger;
+    color: orangered;
+}
+.Form{
+    text-align: center;
+    font-size: larger;
+    color: rgb(0, 30, 57);
+}
+.Submit{
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+    padding: 2px;
+    margin-top: 2px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+#Thank{
+    color: rgb(30, 94, 232);
+}
+#p{
+    color: aqua;
+}
+.popup{
+    width: 400px;
+    height: 160px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 50%;
+    transform: translate(-50, -50), scale(0.1);
+    background-size: contain;
+    background-position: center;
+    padding: 2px;
+    background-color: #fff;
+    text-align: center;
+    visibility: hidden;
+    transition: 0.4s, top 0.4s ;
+    position: absolute;
+}
+.open-popup{
+    top: 180%;
+    transform: translate(-50, -50), scale(1);
+    visibility: visible;
+    
+
+}
+.popup img{
+    width: 50px;
+    height: 50px;
+    margin-top: -50px;
+    border-radius: 50%;
+}
+.popup button{
+    background-color: blue;
+    padding: 5px;
+    font-family: 'Permanent Marker', cursive;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    cursor: pointer;
+}
+.Acc{
+    display: none;
+    position:absolute;
+    left: 0;
+    top: 100%;
+    background-color: skyblue;
+    border-radius: 8px;
+}
+.Acc ul{
+    display: block;
+    margin: 10px;
+}
+.Acc ul li{
+    padding: 5px;
+    width: 100%;
+}
+.container ul li:hover .Acc{
+    display: block;
+    position: absolute;
+}
+hr{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+}
+footer{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+#Right-footer a{
+    text-align: end;
+    margin-left: 600px;
+}
