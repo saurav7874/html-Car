@@ -302,16 +302,16 @@ html{
     scale: 1.2;
 }
 .Contact{
-    width: 600px;
+    width: 900px;
     height: 250px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
     font-family: 'Permanent Marker', cursive;    
     margin-top: 90px;
     padding: 20px;
-    border: 5px solid blue;
     border-radius: 20px;
     justify-self: center;
-    margin-left: 35%;
+    margin-left: 25%;
+    display: flex;
 }
 .ContactUs{
     text-align: center;
@@ -417,4 +417,11 @@ footer{
 #Right-footer a{
     text-align: end;
     margin-left: 600px;
+}
+.Cont img{
+    width: 300px;
+    height: 250px;
+    background-position: center;
+    background-size: contain;
+    padding: 5px;
 }
