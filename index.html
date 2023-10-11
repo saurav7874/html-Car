@@ -5,14 +5,14 @@
     <title>Car</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kalam:wght@300&family=Lobster&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kalam:wght@300&family=Lobster&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kalam:wght@300&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kalam:wght@300&family=Lobster&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -23,8 +23,15 @@
             <li><a href="" class="active">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Services">Services</a></li>
-            <li><a href="">Account</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="">Account <i class="fa-solid fa-caret-down"></i></a>
+            <div class="Acc">
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Signup</a></li>
+                </ul>
+            </div>
+        </li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
         <ul class="social-link">
             <li><a href="https://twitter.com/sauravs160"><i class="fab fa-twitter"></i></a></li>
@@ -77,6 +84,38 @@
      </div>
 </div>
 </div>
-   
+<div class="Contact" id="Contact">
+    <h1 class="ContactUs"> Conact Us </h1>
+    <p class="Queries"> Have Queries,<br> No Worries, We are here to help<br> Drop Your details and relax we will be in touch with you in few minutes </p>
+    <div class="Form">
+    Name   <input type="text" placeholder="Enter Your Name" required><br>
+    Phone  <input type="text" placeholder="Enter Your Phone Number" required><br>
+    Email  <input type="text" placeholder="Enter you Email id" required><br>
+    <button class="Submit" onclick="openpopup()">Submit</button>
+    <div class="popup" id="popup">
+        <img src="Tick.png">
+        <h1 id="Thank">Thank you!</h1>
+        <p id="P">We have recieved your contact details.<br>We are excited to be in touch with you</p>
+        <button type="button" onclick="closepopup()">Ok</button>
+    </div>
+</div>
+</div>
+<hr>
+<footer>
+    <div><p>@2023 All rights reserved by Cars.</p></div>
+    <div id="Right-footer">
+        <a href="" >Terms</a>
+        <a href="" > Help</a>
+    </div>    
+</footer>
+   <script>
+    let popup = document.getElementById("popup");
+    function openpopup () {
+        popup.classList.add("open-popup");
+    }
+        function closepopup () {
+        popup.classList.remove("open-popup");
+    }
+   </script>
 </body>
 </html>
