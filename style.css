@@ -444,6 +444,7 @@ footer{
     transition: 1.2s;
     overflow: hidden;
     background: linear-gradient(rgb(6, 6, 255, 0.4),rgba(6, 6, 255,0.4));
+    border-radius: 15px;
 }
 .Feed-h1{
     text-align: center;
