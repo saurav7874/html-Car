@@ -6,6 +6,11 @@
 }
 .container{
     padding: 8px 8%;
+    position: sticky;
+    top: 0;
+    background-color: blue;
+    z-index: +1;
+    border-radius: 8px;
 }
 .logo{
     border-radius: 50%;
@@ -35,9 +40,9 @@ nav{
     animation: Navliani forwards 1s ease;
 }
 .nav-link li a{
-    color: black;
     margin: 10px;
     transition: .4s ease;
+    color: #fff;
 }
 .social-link a{
     color: red;
