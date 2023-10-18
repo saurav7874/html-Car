@@ -242,3 +242,11 @@ nav{
     z-index: +1;
     border-radius: 8px;
 }
+.smedia{
+    display: flex;
+    gap: 20px;
+}
+.smedia i{
+    cursor: pointer;
+    font-size: xx-large;
+}
