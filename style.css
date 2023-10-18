@@ -491,4 +491,7 @@ footer{
     padding: 2px;
     line-height: 4px;
     font-family: cursive;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid black;
 }
