@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Container{
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+}
+.Login-container{
+    box-sizing: border-box;
+    width: 1000px;
+    height: 700px;
+    border-radius: 50px;
+    box-shadow: 15px 15px 15px rgb(0,0,0);
+    display: flex;
+    flex-direction: row;
+    background-position: center;
+    background-size: contain;
+}
+
+.Login-pic{
+    opacity: 0.9;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(Background.jpg);
+    width: 450px;
+    height: 700px;
+    border-radius: 50px 0 0 50px;
+    border-right: 5px solid #0000ff;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-des{
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+}
+.Login-h1{
+    font-family: 'Young Serif', serif;
+    font-size: 80px;
+    margin-bottom: 100px;
+    color: #0000ff;
+}
+.Login input{
+    padding: 5px;
+    margin: 4px;
+    font-family: cursive;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid black;
+    transition: 0.4s ease;
+}
+.Login input:active{
+    transform: scale(1.2);
+}
+.Password input{
+    padding: 5px;
+    margin: 4px;
+    font-family: cursive;
+    margin-bottom: 20px;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid black;
+    transition: 0.4s ease;
+}
+.Password input:active{
+    transform: scale(1.2);
+}
+.Submit button{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    background-color: #0000ff;
+    padding: 8px 22px;
+    border-radius: 16px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+.Submit button:active{
+    transform: scale(1.1);
+}
+.Login-pic h1{
+    background-color: white;
+    color: blue;
+    border-radius: 25px;
+    padding: 8px 22px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: 0.2s ease forwards;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.LS::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+    background-color: #0000ff;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+.LS:hover:before{
+    transform: translateX(0%);
+}
+.LS:hover{
+    color: #fff;
+}
+.Forgot{
+    display: flex;
+    gap: 25px;
+}
+.For a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: logoani 1s ease forwards;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-link {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: x-large;
+}
+.social-link{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: large;
+    list-style: none;
+}
+.nav-link li{
+    animation: Navliani forwards 1s ease;
+    list-style: none;
+}
+.nav-link li a{
+    margin: 10px;
+    transition: .4s ease;
+    color: #fff;
+    text-decoration: none;
+    
+}
+.social-link a{
+    color: red;
+    margin: 10px;
+    text-decoration: none;
+}
+.social-link a:hover{
+    color: aqua;
+}
+.nav-link li a:hover{
+    color: aqua;
+}
+.social-link li a{
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    transform: rotate(45deg);
+    transition: .4s ease;
+}
+.social-link li a:hover{
+    border-color: blue;
+}
+.social-link li a i{
+    transform: rotate(-45deg);
+    font-size: 22px;
+}
+@keyframes logoani {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(100px);
+        opacity: 1;
+    }
+  }
+
+  @keyframes Navliani {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }
+  .Acc{
+    display: none;
+    position:absolute;
+    left: 0;
+    top: 100%;
+    background-color: skyblue;
+    border-radius: 8px;
+}
+.Acc ul{
+    display: block;
+    margin: 10px;
+}
+.Acc ul li{
+    padding: 5px;
+    width: 100%;
+}
+.Navigation ul li:hover .Acc{
+    display: block;
+    position: absolute;
+}
+.Navigation{
+    padding: 8px 8%;
+    position: sticky;
+    top: 0;
+    background-color: blue;
+    z-index: +1;
+    border-radius: 8px;
+}
