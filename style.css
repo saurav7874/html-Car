@@ -485,9 +485,6 @@ footer{
     scale: 1.2;
 }
 .Contact input{
-    border: 2px solid blue;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
-    border-radius: 9px;
     padding: 2px;
     line-height: 4px;
     font-family: cursive;
