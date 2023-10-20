@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kalam:wght@300&family=Lobster&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100&family=Young+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kalam:wght@300&family=Lobster&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -107,6 +110,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum impedit tenetur alias assumenda, quam vitae. Atque aliquid, ipsa </p></div>
     </div>
 </Feedback>
+<div class="Cont-Pop">
 <div class="Contact" id="Contact">
     <div class="Cont">
         <img src="Contact.jpg">
@@ -118,14 +122,15 @@
     Name   <input type="text" placeholder="Enter Your Name" required><br>
     Phone  <input type="text" placeholder="Enter Your Phone Number" required><br>
     Email  <input type="text" placeholder="Enter you Email id" required><br>
-    <button class="Submit" onclick="openpopup()">Submit</button>
-    <div class="popup" id="popup">
-        <img src="Tick.png">
-        <h1 id="Thank">Thank you!</h1>
-        <p id="P">We have recieved your contact details.<br>We are excited to be in touch with you</p>
-        <button type="button" onclick="closepopup()">Ok</button>
-    </div>
+    <button class="Submit" id="mybutton" >Submit</button>
 </div>
+</div>
+</div>
+<div class="Popupbox" id="Popupbox">
+    <img src="Tick.png"><br>
+    <h1>Done</h1><br>
+    <p>We will be in touch with you very soon.</p>
+    <button class="Popbtn" id="Popbtn">Ok</button>
 </div>
 </div>
 <hr>
@@ -136,14 +141,7 @@
         <a href="" > Help</a>
     </div>    
 </footer>
-   <script>
-    let popup = document.getElementById("popup");
-    function openpopup () {
-        popup.classList.add("open-popup");
-    }
-        function closepopup () {
-        popup.classList.remove("open-popup");
-    }
-   </script>
+   <script src="index.js" charset="UTF-8"></script>
+   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </body>
 </html>
