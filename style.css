@@ -570,7 +570,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
 }
-.Right-footer{
+#Right-footer{
     margin-left: -400px;
     display: none;
 }
@@ -579,11 +579,10 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
     }
-    .logo img{
+    .logo{
         width: 45px;
     height: 46px;
     }
-
   }
 
 
