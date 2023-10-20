@@ -561,6 +561,20 @@ footer{
     margin-top: 15px;
     margin-left: 50px;
     }
+    .nav-link{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Right-footer{
+    margin-left: -400px;
+}
+    }
+
   }
 
 
