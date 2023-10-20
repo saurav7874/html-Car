@@ -572,7 +572,16 @@ footer{
 }
 .Right-footer{
     margin-left: -400px;
+    display: none;
 }
+    .footer{
+        display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    .logo img{
+        width: 45px;
+    height: 46px;
     }
 
   }
