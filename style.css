@@ -308,7 +308,7 @@ html{
 }
 .Contact{
     width: 900px;
-    height: 270px;
+    height: 320px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
     font-family: 'Permanent Marker', cursive;    
     margin-top: 90px;
@@ -339,54 +339,21 @@ html{
     border-radius: 5px;
     background-color: red;
     color: #fff;
-    padding: 2px;
-    margin-top: 2px;
+    padding: 5px 15px;
+    margin-top: 5px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
     cursor: pointer;
+    border: 0;
+    outline: 0;
+   justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
 }
 #Thank{
     color: rgb(30, 94, 232);
 }
 #p{
     color: aqua;
-}
-.popup{
-    width: 400px;
-    height: 160px;
-    border-radius: 10px;
-    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.6);
-    top: 0;
-    left: 50%;
-    transform: translate(-50, -50), scale(0.1);
-    background-size: contain;
-    background-position: center;
-    padding: 2px;
-    background-color: #fff;
-    text-align: center;
-    visibility: hidden;
-    transition: 0.4s, top 0.4s ;
-    position: absolute;
-}
-.open-popup{
-    top: 180%;
-    transform: translate(-50, -50), scale(1);
-    visibility: visible;
-    
-
-}
-.popup img{
-    width: 50px;
-    height: 50px;
-    margin-top: -50px;
-    border-radius: 50%;
-}
-.popup button{
-    background-color: blue;
-    padding: 5px;
-    font-family: 'Permanent Marker', cursive;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
-    color: #fff;
-    cursor: pointer;
 }
 .Acc{
     display: none;
@@ -426,10 +393,9 @@ footer{
 }
 .Cont img{
     width: 300px;
-    height: 250px;
+    height: 320px;
     background-position: center;
     background-size: contain;
-    padding: 5px;
 }
 .Feedback{
     display: grid;
@@ -485,10 +451,117 @@ footer{
     scale: 1.2;
 }
 .Contact input{
-    padding: 2px;
+    border-bottom: 2px solid blue;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    padding: 5px;
     line-height: 4px;
     font-family: cursive;
-    outline: 0;
     border: 0;
-    border-bottom: 2px solid black;
+    outline: 0;
+    margin: 5px;
 }
+.Popupbox{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    width: 300px;
+    height: 220px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    display: none;
+    margin-top: 150px;
+    background-color: cyan;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: bolder;
+}
+.Popupbox img{
+    width: 80px;
+    height: 80px;
+    margin-top: -50px;
+}
+.Popbtn{
+    width: 35px;
+    height: 25px;
+    border: 0;
+    outline: 0;
+    background-color: blue;
+    border-radius: 8px;
+    color: #fff;
+    font-size: large;
+    margin-top: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+.Cont-des{
+    display: grid;
+    place-items: center;
+}
+.Cont-Pop{
+    display: flex;
+    flex-direction: row;
+}
+.fade-out {
+    opacity: 0.6;
+    transition: opacity 0.7s;
+}
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.7s;
+}
+@media only screen and (max-width: 393px) {
+    .Services {
+        margin-left: -55px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Feed-h1{
+        padding: 5px;
+    }
+    .Feedback{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 90px;
+    padding: 5px;
+    }
+    .Contact{
+        display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 700px;
+    padding: 15px;
+    margin-left: 50px;
+    }
+    .Cont img{
+        width: 280px;
+    border-radius: 15px;
+    }
+    .header-container{
+        display: flex;
+    flex-direction: column;
+    height: 1300px;
+    padding: 5px;
+    }
+    .Services-h1{
+        margin-left: 100px;
+    }
+    .Services-card{
+        display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    }
+    .Cont-Pop{
+        display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    }
+    .Popupbox{
+        display: block;
+    margin-top: 15px;
+    margin-left: 50px;
+    }
+  }
+
+
+
