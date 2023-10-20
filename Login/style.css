@@ -250,3 +250,23 @@ nav{
     cursor: pointer;
     font-size: xx-large;
 }
+@media only screen and (max-width: 600px) and (min-width: 420px){
+    .Login-container{
+        display: flex;
+    flex-direction: column;
+    width: 410px;
+    margin-left: 50px;
+}
+.Login-pic{
+    width: 410px;
+    border-radius: 50px;
+    border-right: 0;
+}
+.login-des{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.Navigation{
+    width: 410px;
+}
+}
