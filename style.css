@@ -457,6 +457,7 @@ footer{
     border: 0;
     outline: 0;
     margin: 5px;
+   font-family: 'Kalam', cursive;
 }
 .Popupbox{
     display: flex;
