@@ -18,8 +18,7 @@ document.getElementById("Signup-Submit").addEventListener("click", function(){
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var phone = document.getElementById("phone").value;
-    var password = document.getElementById("password").value;
-    if(name && email && phone && password){
+    if(name && email && phone){
         var message = "Hi" + name + " \nWelcome on Board!\n ";
         message += " Your details are\n ";
         message += " Email: " + email + " \n ";
