@@ -114,6 +114,7 @@ body{
     border: 0;
     border-bottom: 2px solid black;
     transition: 0.4s ease;
+    font-family: 'Kalam', cursive;
 }
 .Login input:active{
     transform: scale(1.2);
@@ -127,6 +128,7 @@ body{
     border: 0;
     border-bottom: 2px solid black;
     transition: 0.4s ease;
+    font-family: 'Kalam', cursive;
 }
 .Password input:active{
     transform: scale(1.2);
