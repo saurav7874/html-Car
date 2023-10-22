@@ -1,20 +1,25 @@
+
+
+
 document.getElementById("mybutton").addEventListener("click", function(){
-    var button = document.getElementById("mybutton");
-    button.innerText = "Submitted";
-
-    var contactDiv = document.getElementById("Contact");
-    var Popupdiv = document.getElementById("Popupbox");
-    Popupdiv.style.display = "block";
-    contactDiv.classList.add("fade-out");
-}
-)
-document.getElementById("Popbtn").addEventListener("click", function(){
-    var button = document.getElementById("mybutton");
-    button.innerText = "Submit";
-
-    var contactDiv = document.getElementById("Contact"); 
-    contactDiv.classList.add("fade-in");
-
-    var Popupdiv = document.getElementById("Popupbox");
-    Popupdiv.style.display = "none";
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    if (name && phone && email) {
+        alert("Hi, " + name + 
+        " we will be in touch with you very shortly. " );
+    } else {
+        alert("Please enter all your details before submitting.");
+    }
 });
+const mobile_nav = document.querySelector(".mobile-navbar-btn");
+
+const nav_header = document.querySelector(".header");
+
+const toggleNavbar = () => {
+
+    nav_header.classList.toggle("active");
+
+};
+
+mobile_nav.addEventListener("click", ()  => toggleNavbar());
