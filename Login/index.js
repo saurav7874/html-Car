@@ -14,7 +14,7 @@ SSbtn.addEventListener("click", () => {
 })
 var details= 
 
-document.getElementById("signup-submit").addEventListener("click", function(){
+document.getElementById("Signup-Submit").addEventListener("click", function(){
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var phone = document.getElementById("phone").value;
