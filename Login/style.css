@@ -2,10 +2,63 @@
     margin: 0;
     padding: 0;
 }
-.Container{
-    display: grid;
-    place-items: center;
-    margin-top: 100px;
+html{
+    overflow-x:hidden ;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.header{
+    padding: 0 4.8rem;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:blue;
+    position: sticky;
+    z-index: 1;
+}
+.header .logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.navbar-list{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+.navbar-link:link,
+.navbar-link:visited{
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+    color: white;
+    transition: all 0.3s;
+    font-family: 'Kalam', cursive;
+}
+
+.navbar-link:hover, .navbar-link:active{
+    color: skyblue;
+}
+
+.mobile-navbar-btn{
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon{
+    width: 2rem;
+    height: 2rem;
+    color: white;
+}
+
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
 }
 .Login-container{
     box-sizing: border-box;
@@ -18,7 +71,12 @@
     background-position: center;
     background-size: contain;
 }
-
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
 .Login-pic{
     opacity: 0.9;
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(Background.jpg);
@@ -154,23 +212,24 @@
     height: 80px;
     animation: logoani 1s ease forwards;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.logo{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: logoani 1s ease forwards;
 }
+
 .nav-link {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: x-large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+        margin-top: 30px;
+        padding-right: 25px;
 }
 .social-link{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: large;
+    float: inline-end;
     list-style: none;
 }
 .nav-link li{
@@ -273,7 +332,7 @@ nav{
     display: flex;
     gap: 25px;
 }
-@media only screen and (max-width: 600px) and (min-width: 350px){
+@media(max-width: 62em){
     .Login-container{
         display: flex;
     flex-direction: column;
@@ -290,6 +349,12 @@ nav{
 .login-des{
     margin-top: 50px;
     margin-right: 50px;
+}
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
 }
 .Navigation{
     width: 410px;
@@ -310,6 +375,63 @@ nav{
 }
 .sgnmedia{
     justify-content: center;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    margin-left: -130px;
+}
+.mobile-navbar-btn{
+    display: block;
+    z-index: 999;
+    border: 3px solid white;
+    color: white;
+    background:transparent;
+
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    background: blue;
+    color: #fff;
+
+    top: 100%;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(100%);
+    transition: all 0.8s linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.header img{
+    margin-left: -30%;
+}
+.navbar-list{
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.active .navbar{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+}
+.active .mobile-navbar-btn .mobile-nav-icon[name = "close-outline"]{
+    display: block;
+}
+
+.active .mobile-navbar-btn .mobile-nav-icon[name = "menu-outline"]{
+display: none;
 }
 }
 .login-swap{
