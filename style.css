@@ -4,72 +4,69 @@
     text-decoration: none;
     list-style: none;
 }
-.container{
-    padding: 8px 8%;
+html{
+    overflow-x:hidden ;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.header{
+    padding: 0 4.8rem;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:blue;
     position: sticky;
-    top: 0;
-    background-color: blue;
-    z-index: +1;
-    border-radius: 8px;
+    z-index: 1;
+}
+.header .logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.navbar-list{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+.navbar-link:link,
+.navbar-link:visited{
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+    color: white;
+    transition: all 0.3s;
+    font-family: 'Kalam', cursive;
+}
+
+.navbar-link:hover, .navbar-link:active{
+    color: skyblue;
+}
+
+.mobile-navbar-btn{
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon{
+    width: 2rem;
+    height: 2rem;
+    color: white;
+}
+
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
 }
 .logo{
     border-radius: 50%;
     width: 80px;
     height: 80px;
     animation: logoani 1s ease forwards;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.nav-link {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: x-large;
-}
-.social-link{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: large;
-}
-.nav-link li{
-    animation: Navliani forwards 1s ease;
-}
-.nav-link li a{
-    margin: 10px;
-    transition: .4s ease;
-    color: #fff;
-}
-.social-link a{
-    color: red;
-    margin: 10px;
-}
-.social-link a:hover{
-    color: aqua;
-}
-.nav-link li a:hover{
-    color: aqua;
-}
-.social-link li a{
-    height: 40px;
-    width: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid transparent;
-    transform: rotate(45deg);
-    transition: .4s ease;
-}
-.social-link li a:hover{
-    border-color: blue;
-}
-.social-link li a i{
-    transform: rotate(-45deg);
-    font-size: 22px;
 }
 .btn{
     background-color: skyblue;
@@ -379,6 +376,7 @@ hr{
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 50px;
+    display: none;
 }
 footer{
     display: grid;
@@ -509,7 +507,7 @@ footer{
     opacity: 1;
     transition: opacity 0.7s;
 }
-@media only screen and (max-width: 450px) and (min-width: 350px) {
+@media(max-width: 62em)  {
     .Services {
         margin-left: -55px;
         display: flex;
@@ -561,29 +559,77 @@ footer{
     margin-top: 15px;
     margin-left: 50px;
     }
-    .nav-link{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.container{
-    display: flex;
-    flex-wrap: wrap;
-}
-#Right-footer{
-    margin-left: -400px;
-    display: none;
-}
-    .footer{
-        display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    }
-    .logo{
+    .logo img{
         width: 45px;
     height: 46px;
     }
-  }
+    hr{
+        display: block;
+    }
+    .mobile-navbar-btn{
+        display: block;
+        z-index: 999;
+        border: 3px solid white;
+        color: white;
+        background:transparent;
 
+    }
+    .navbar{
+        width: 100%;
+        height: 100%;
+        background: blue;
+        color: #fff;
 
+        top: 100%;
+        left: 0;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transform: translateX(100%);
+        transition: all 0.8s linear;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .header img{
+        margin-left: -30%;
+    }
+    .navbar-list{
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .active .navbar{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name = "close-outline"]{
+        display: block;
+    }
+
+.active .mobile-navbar-btn .mobile-nav-icon[name = "menu-outline"]{
+    display: none;
+}
+}
+.up{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    color: blue;
+    border-radius: 50%;
+    font-size: xx-large;
+}
+.up a:active{
+    color: red;
+}
+.up a:visited{
+    color: blue;
+}
