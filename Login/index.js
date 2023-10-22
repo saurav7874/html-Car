@@ -19,7 +19,7 @@ document.getElementById("Signup-Submit").addEventListener("click", function(){
     var email = document.getElementById("email").value;
     var phone = document.getElementById("phone").value;
     if(name && email && phone){
-        var message = "Hi" + name + " \nWelcome on Board!\n ";
+        var message = " Hi " + name + " \nWelcome on Board!\n ";
         message += " Your details are\n ";
         message += " Email: " + email + " \n ";
         message += " Phone: " + phone + " \n ";
